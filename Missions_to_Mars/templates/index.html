@@ -12,10 +12,10 @@
 
 <body>
   <div class="container-fluid">
-    <div class="jumbotron text-center" style="background-color: #b55424; text-shadow: 2px 2px 5px;">
-      <h1>Curious about Mars?</h1>
+    <div class="jumbotron text-center" style="background-color: #b55424; text-shadow: 1px 1px 3px;">
+      <h1 style="font-family: fantasy;">Curious about Mars?</h1>
       <p>Great! Let's explore. Click the button to start</p>
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button" style="background-color: darkslategray;">Get Data!</a></p>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button" style="background-color: darkslategray; border-color: darkslategray;">Get Data!</a></p>
     </div>
     <!-- Start the Mars Content -->
     <div class="row">
@@ -43,7 +43,7 @@
         <h2>Mars Hemispheres</h2>
         {% for hemi in mars_data.hemi_img_urls %}
         <div class="card-deck">
-          <div class="card mb-3" style="max-width: 48rem;">
+          <div class="card" style="max-width: 48rem;">
             <img src="{{ hemi.img_url }}" style="max-width:100%">
             <div class="card-body">
               <h5 class="card-title" style="text-align:center"><strong>{{ hemi.title }}</strong></h5>
